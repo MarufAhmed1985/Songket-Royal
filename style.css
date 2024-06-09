@@ -1,0 +1,708 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Sofia", sans-serif;
+}
+#banner{
+    background: url(Royal/cuple.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-bottom: 650px;
+}
+.logo{
+    width: 140px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+}
+.banner-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 450px;
+
+
+}
+.banner-text h1{
+    color: #fbfdff;
+    font-size: 130px;
+    font-family: "Trirong", serif;
+}
+.banner-text p{
+    font-size: 50px;
+    font-style: italic;  
+}
+.banner-btn{
+    margin: 100px auto 0;
+
+}
+.banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: .5px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+.banner-btn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transition: 0.5s;
+}
+.banner-btn a:hover span{
+    width: 100%;
+}
+
+.banner-btn a:hover{
+    color: black;
+}
+
+
+
+
+
+/*menu bar********************/
+
+#sideNav {
+    width: 150px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 2;
+    transition: 0.5s;
+    transition: background-color 0.3s;
+    
+}
+nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #171616;
+}
+#manuBtn {
+    width: 50px;
+    height: 50px;
+    background: #da62c2;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#manuBtn img {
+    width: 20px;
+    margin-top: 15px;
+}
+@media screen and (max-width: 770px) {
+    .banner-text h1 {
+        font-size: 44px;
+    }
+    .banner-btn a {
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+/*why choose us********************/
+
+#whychooseus{
+    width: 100%;
+    padding: 70px 0;
+}
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: #f226f2;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+
+}
+.title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#f415dd,#fff);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+
+}
+.title-text h1{
+    font-size: 50px;
+}
+.whychooseus-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.whychooseus{
+    flex-basis: 50%;
+}
+.whychooseus-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+.whychooseus-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.whychooseus h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e206c1;
+}
+.whychooseus-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.whychooseus-icon .fa{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #e206c1;
+    border: 1px solid #e206c1;
+}
+.whychooseus-text p{
+    padding: 0 20px;
+    text-align: initial;
+}
+@media screen and (max-width: 770px){
+    .title-text h1{
+        font-size: 35px;
+    }
+    .whychooseus{
+        flex-basis: 100%;
+    }
+    .whychooseus-img{
+        flex-basis: 100%;
+    }
+    .whychooseus-img img{
+        width: 100%;
+    }
+}
+
+/*-------------categories----------------------------------*/
+
+#categories{
+    width: 100%;
+    padding: 70px 0;
+    background: #ddc9d7;
+}
+.categories-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.cate{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+.cate img{
+    display: inline-block;
+    width: 400px;
+    height: 470px;
+    padding: 2px;
+    border-radius: 10px;
+}
+.overLay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(147, 51, 51, 0.5),#009688);
+    opacity: 0;
+    transition: 1s;
+}
+.cate:hover .overLay {
+    opacity: 1;
+}
+.cate-desc{
+    width: 80%;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+hr{
+    background: #fff;
+    height: 4px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+.cate-desc p{
+    font-size: 14px;
+}
+.cate:hover .cate-desc{
+    bottom: 40%;
+    opacity: 1;
+}
+
+@media screen and (max-width: 770px){
+    .cate{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .cate-desc p{
+        font-size: 12px;
+    }
+    hr{
+        margin: 5px auto;
+    }
+    .cate:hover .cate-desc {
+        bottom: 25% !important;
+    }
+}
+/*----------------------Gallery kaftan CSS--------------*/
+#Kaftan{
+    width: 100%;
+    padding: 30px 0%;
+    background:  linear-gradient(rgba(196, 167, 167, 0.5),rgb(243, 192, 238))
+}
+.Kaftan-Box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.Whole sale & retails{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.Whole sale & retails img{
+    width: 100%;
+    border-radius: 7px;
+}
+
+
+
+/*----------------------Gallery sampin HD CSS--------------*/
+
+#Sampin{
+    width: 100%;
+    padding: 30px 0%;
+    
+    /*--background:  linear-gradient(rgba(0,0,0,0.5),rgb(6, 6, 6))*/
+}
+.Sampin-Box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    
+}
+.Whole sale & retails{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.Whole sale & retails img{
+    width: 100%;
+    border-radius: 7px;
+    padding-bottom: 10px;
+    
+}
+
+/*----------------------Gallery sampin India CSS--------------*/
+
+#SampinIndia{
+    width: 100%;
+    padding: 30px 0%;
+}
+.SampinIndia-Box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.Whole sale & retails{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.Whole sale & retails{
+    width: 100%;
+    border-radius: 7px;
+}
+
+/*----------------------Gallery sampin Pakistan CSS--------------*/
+
+#SampinPaki{
+    width: 100%;
+    padding: 30px 0%;
+}
+.SampinPaki-Box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.Whole sale & retails{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.Whole sale & retails{
+    width: 100%;
+    border-radius: 7px;
+}
+
+
+/*--Gallery SAMPIN BUDAK PL026 CSS--------------------------------------------------------------------*/
+
+#SampinBudak{
+    width: 100%;
+    padding: 30px 0%;
+}
+.SampinBudak-Box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.Whole sale & retails{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.Whole sale & retails{
+    width: 100%;
+    border-radius: 7px;
+}
+
+
+/*--Gallery SONGKET  CSS--------------------------------------------------------------------*/
+
+#SONGKETBUNGATABUR{
+    width: 100%;
+    padding: 30px 0%;
+}
+.SONGKETBUNGATABUR-Box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.Whole sale & retails{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.Whole sale & retails{
+    width: 100%;
+    border-radius: 7px;
+}
+
+/*--Gallery SONGKET  CSS--------------------------------------------------------------------*/
+
+#SONGKET{
+    width: 100%;
+    padding: 30px 0%;
+}
+.SONGKET-Box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.Whole sale & retails{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.Whole sale & retails{
+    width: 100%;
+    border-radius: 7px;
+}
+
+/*--Gallery lace  CSS--------------------------------------------------------------------*/
+
+
+#Lace{
+    width: 100%;
+    padding: 30px 0%;
+}
+.Lace-Box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.Whole sale & retails{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.Whole sale & retails{
+    width: 100%;
+    border-radius: 7px;
+}
+
+
+/*--Gallery Button CSS--------------------------------------------------------------------*/
+
+#Button{
+    width: 100%;
+    padding: 30px 0%;
+}
+.Button-Box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.Whole sale & retails{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.Whole sale & retails{
+    width: 100%;
+    border-radius: 7px;
+}
+
+
+
+
+
+/*--LOCATION CSS--------------------------------------------------------------------*/
+
+#OurLocation{
+    width: 100%;
+    padding: 30px 0% 1%;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+iframe{
+    width: 97%;
+    height: 800px;
+    margin-bottom: 200px;
+}
+
+
+
+
+/*--visit ourshop CSS--------------------------------------------------------------------*/
+
+#Branch{
+    width: 100%;
+    padding: 50px 0% 1%;
+
+    
+}
+.Branch-Box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: center;
+    text-align:justify;
+}
+
+h1{
+    color: #0b0b0b;
+}
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+}
+
+
+
+
+/*--Contact Us CSS--------------------------------------------------------------------*/
+
+#ContactUs{
+    width: 97%;
+    padding: 100px 0 100px;
+    background: #efefef;
+    position: relative;
+    
+}
+.ContactUs-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.ContactUs-left,.ContactUs-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.ContactUs-left{
+    text-align: left;
+    
+}
+.ContactUs-right{
+    text-align: right;
+    
+    
+}
+.ContactUs-row h1{
+    margin: 10px 0;
+}
+.ContactUs-row p{
+    line-height: 35px;
+    
+}
+.ContactUs-left .fa,.ContactUs-right .fa{
+    font-size: 20px;
+    color: #ea0be2;
+    margin: 10px;
+}
+
+.ContactUs-img{
+    max-width: 370px;
+    opacity: 0.2;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%,-50%);
+}
+
+.social-links{
+    text-align: center;
+}
+.social-links .fa-brands{
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 2px solid #ea0be2;
+    transition: .5s;
+    margin-bottom: 10px;
+    
+}
+.fa-telegram {
+    cursor: pointer;
+    transition: .5s;
+}
+.fa-whatsapp {
+    cursor: pointer;
+    transition: .5s;
+}
+.fa-shopify {
+    cursor: pointer;
+    transition: .5s;
+}
+.fa-tiktok {
+    cursor: pointer;
+    transition: .5s;
+}
+.social-links .fa-brands:hover{
+    background: #ea0be2;
+    color: #fff;
+    transform: translateY(-7px);
+}
+.social-links p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 770px){
+    .ContactUs-left ,.ContactUs-right{
+        flex-basis: 100%;
+        font-size: 14px;
+        
+    }
+    
+    .ContactUs-img{
+        top: 25%;
+    }
+
+}
+
+
+    
+
+
+
+
+
+
+
+    
+
